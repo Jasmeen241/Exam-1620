@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.shop-items {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". album1 ." ". album2 ." ". album3 ." ". album4 .";
+    background-color: aquamarine;
+}
+.album1 {
+    grid-area: album1;
+}
+
+.album2 {
+    grid-area: album2;
+}
+
+.album3 {
+    grid-area: album3;
+}
+
+.album4 {
+    grid-area: album4;
+}
+
+.nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+h1{
+    background-color: aqua;
+    font-family: 'Indie Flower', sans-serif;
+}
+h2{
+    background-color: aquamarine;
+}
+.shop-item>span {
+    display: block;
+}
+p{
+    background-color: aquamarine;
+}
+
+@media only screen and (min-width: 641px) {
+    
+    .shop-items {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: ". album1 . . album2" ". album3 . . album4"
+    }
+}
+
